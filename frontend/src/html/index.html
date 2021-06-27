@@ -1,0 +1,21 @@
+{% extends "parts/template.html" %}
+
+{% set page ='index' %}
+
+{% block meta %}
+  <title>Amoeba Bootstrap Template - Home</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+{% endblock %}
+
+{% block main %}
+
+  {% include "sections/hero.html" %}
+
+  <main id="main">
+
+    {% include "sections/add-user-section.html" %}
+
+  </main><!-- End #main -->
+
+{% endblock %}
