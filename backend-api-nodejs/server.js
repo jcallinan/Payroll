@@ -40,7 +40,27 @@ app.post('/addUser', function(req, res) {
 // });
 })
 
- 
+
+
+app.post('/addEmployee', function(req, res) {
+  mydata = req.body;
+
+//   con.connect(function(err) {
+  //    if (err) throw err;
+  //    console.log("Connected!");
+      var sql = "INSERT INTO employees (user_name, password) VALUES ('" + mydata.username + "', '" + mydata.password + "')";
+      con.query(sql, function (err, result) {
+        if (err) throw err;
+        console.log("1 record inserted");
+      });
+//      });
+//       con.end( function(err) {
+// if (err) {console.log("Error ending the connection:",err);}
+// });
+})
+
+
+
 
 app.get('/', (req, res) => {
     res.send('Hello from App Engine!');

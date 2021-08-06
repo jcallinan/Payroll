@@ -18,7 +18,7 @@ function addEmployee() {
         method: 'POST',
         url: 'http://localhost:8080/addEmployee',
         headers: {'content-type': 'application/json'},
-        data: {firstname: document.getElementById('Fname').value, middleinitial: document.getElementById('MInitial').value,  lastname: document.getElementById('LName').value, title: document.getElementById('EmpTitle').value, salary: document.getElementById('EmpSalary').value, status: document.getElementById('EmpStatus').value}
+        data: {firstname: document.getElementById('FName').value, middleinitial: document.getElementById('MInitial').value,  lastname: document.getElementById('LName').value, title: document.getElementById('EmpTitle').value, salary: document.getElementById('EmpSalary').value, status: document.getElementById('EmpStatus').value}
       };
       
       axios.request(EmployeeInformation).then(function (response) {
