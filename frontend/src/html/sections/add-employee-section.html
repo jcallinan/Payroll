@@ -14,32 +14,32 @@
 <div class="Employee-Information">
 
     <div class="Employee-First-Name">
-        <input type="text" class="form-control" name="password" id="FName" placeholder="First Name" required>
+        <input type="text" class="form-control" name="Fname" id="FName" placeholder="First Name" required>
       </div>
       <br>
 
     <div class="Employee-Middle-Initial">
-        <input type="text" class="form-control" name="password" id="MInitial" placeholder="Middle Initial" required>
+        <input type="text" class="form-control" name="MInitial" id="MInitial" placeholder="Middle Initial" required>
       </div>
       <br>
 
     <div class="Employee-Last-Name">
-        <input type="text" class="form-control" name="password" id="LName" placeholder="Last Name" required>
+        <input type="text" class="form-control" name="LName" id="LName" placeholder="Last Name" required>
       </div>
       <br>
 
     <div class="Employee-Title">
-        <input type="text" class="form-control" name="password" id="EmpTitle" placeholder="Title" required>
+        <input type="text" class="form-control" name="EmpTitle" id="EmpTitle" placeholder="Title" required>
       </div>
       <br>
 
-    <div class="Employee Salary">
-        <input type="text" class="form-control" name="password" id="EmpSalary" placeholder="Salary" required>
+    <div class="Employee-Salary">
+        <input type="text" class="form-control" name="EmpSalary" id="EmpSalary" placeholder="Salary" required>
       </div>
       <br>
 
     <div class="Employee-Status">
-        <input type="text" class="form-control" name="password" id="EmpActive" placeholder="Status" required>
+        <input type="text" class="form-control" name="EmpStatus" id="EmpStatus" placeholder="Status" required>
       </div>
 
 </div>
@@ -54,4 +54,12 @@
     <br>
 
     <div class="Submit-Btn"><button type="submit" id="btnAddEmployeeSubmit">Add Employee</button></div>
+
+    <br>
+
+    <div class="my-3">
+      <div id="loading" class="loading"></div>
+      <div id="error-message"  class="error-message"></div>
+      <div id="sent-message"  class="sent-message">The new user has been added. Thank you!</div>
+    </div>
 </div>
