@@ -121,3 +121,11 @@ CREATE TABLE `users` (
   `password` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+ALTER TABLE `payroll`.`hours` 
+ADD COLUMN `work_date` DATETIME NULL AFTER `approved`;
+ALTER TABLE `payroll`.`hours` 
+ADD COLUMN `break` DECIMAL(18,2) NULL AFTER `work_date`;
+
+INSERT INTO `payroll`.`paytype` (`paytype_name`, `paytype_rate`, `active`) VALUES ('Regular', '30.00', '1');
+INSERT INTO `payroll`.`employee` (`emp_first_name`, `emp_last_name`, `title`, `salary`, `hourly_rate`, `active`) VALUES ('Jeremy', 'Callinan', 'Developer', '250000', '125', '1');
