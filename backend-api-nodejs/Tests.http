@@ -6,7 +6,18 @@ content-type: application/json
     "username": "0123456",
     "password": "password" 
 }
+###
+POST http://localhost:8080/subTime HTTP/1.1
+content-type: application/json
 
+{
+    "Employee_Id":1,
+      "work_date":"8/6/2021 8:00:00AM",
+       "start_time":"8/6/2021 8:00:00AM",
+       "end_time":"8/6/2021 5:00:00PM" ,
+      "break":30,
+      "paytype_id":1
+}
 
 ###
 

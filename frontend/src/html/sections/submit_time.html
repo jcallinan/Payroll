@@ -4,9 +4,11 @@
 
     <div class="section-title">
       <h2>Submit Time</h2>
+
     </div>
     
     <div class="row">
+    </div class= "d-grid gap-2">
       <div class="col-sm-6">
         <lable for="Employee_Id"
         class="form-label">Employee Id</lable>
@@ -16,20 +18,29 @@
         <div class= "invalid-feedback">
           Employee id required.
         </div>
-      </div>
+        
 
+      </div>
+      
+      <div class="my-2">
+      </div>
+      
       <div class="row">
         <div class="col-sm-6">
-          <lable for="Weekday"
-          class="form-label">Day of the Week</lable>
-          <input id="Weekday" type="text"
+          <lable for="Date"
+          class="form-label">Date</lable>
+          <input id="Date" type="text"
           class="form-control"
-          placeholder="Monday" required>
+          placeholder="8/4/2021" required>
           <div class= "invalid-feedback">
-            Valid day of the week required.
+            Valid date required.
           </div>
         </div>
 
+        <div class="my-2">
+        </div>
+
+        
         <div class="row">
           <div class="col-sm-6">
             <lable for="Start_Time"
@@ -40,6 +51,9 @@
             <div class= "invalid-feedback">
               Valid start time is required.
             </div>
+          </div>
+          
+          <div class="my-2">
           </div>
 
           <div class="row">
@@ -54,6 +68,25 @@
               </div>
             </div>
 
+            <div class="my-2">
+            </div>
+            
+            <div class="row">
+              <div class="col-sm-6">
+                <lable for="Break"
+                class="form-label">Break</lable>
+                <input id="Break" type="text"
+                class="form-control"
+                placeholder="30" required>
+                <div class= "invalid-feedback">
+                  Valid time required.
+                </div>
+              </div>
+      
+              <div class="my-2">
+              </div>
+      
+
             <div class="row">
               <div class="col-sm-6">
                 <lable for="Pay_type"
@@ -66,11 +99,20 @@
                 </div>
               </div>
               </div>
+              
+              <div class="my-3">
+                 
+              </div>
 
               <br><br>
               <div class="text-center"><button type="submit" id="timeaddedSubmit">Submit Time</button></div>
               <br><br>
               <div class="text-center"><button type="submit" id="edit_time">Edit Time</button></div>
+              
+              <div class="text-center"><button type="submit" id="btnsubtimeSubmit">Submit Time</button></div>
+              <div class="my-2">
+              </div>
+              <div class="text-center"><button type="button" id="edit_time">Edit Time</button></div>
 
           
       
