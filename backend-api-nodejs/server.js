@@ -59,7 +59,22 @@ app.post('/addEmployee', function(req, res) {
 // });
 })
 
+app.post('/SubTime', function(req, res) {
+  mydata = req.body;
 
+//   con.connect(function(err) {
+  //    if (err) throw err;
+  //    console.log("Connected!");
+      var sql = "INSERT INTO hours (emp_id, date, start_time, end_time, paytype_id) VALUES ('" + mydata.Employee_Id + "', '" + mydata.Date + "', '" + mydata.Weekday + "', '" + mydata.Start_Time + "', '" + mydata.End_Time + "', '" + mydata.Break + "', '" + mydata.Pay_type + "')";
+      con.query(sql, function (err, result) {
+        if (err) throw err;
+        console.log("1 record inserted");
+      });
+//      });
+//       con.end( function(err) {
+// if (err) {console.log("Error ending the connection:",err);}
+// });
+})
 
 
 app.get('/', (req, res) => {
