@@ -129,3 +129,8 @@ ADD COLUMN `break` DECIMAL(18,2) NULL AFTER `work_date`;
 
 INSERT INTO `payroll`.`paytype` (`paytype_name`, `paytype_rate`, `active`) VALUES ('Regular', '30.00', '1');
 INSERT INTO `payroll`.`employee` (`emp_first_name`, `emp_last_name`, `title`, `salary`, `hourly_rate`, `active`) VALUES ('Jeremy', 'Callinan', 'Developer', '250000', '125', '1');
+
+ALTER TABLE `payroll`.`hours` 
+CHANGE COLUMN `start_time` `start_time` TIME NOT NULL ,
+CHANGE COLUMN `end_time` `end_time` TIME NOT NULL ,
+CHANGE COLUMN `work_date` `work_date` DATE NULL DEFAULT NULL ;

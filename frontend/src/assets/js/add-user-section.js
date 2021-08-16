@@ -12,7 +12,6 @@ divSentMessage.style.visibility ="hidden";
  
 
 function addUser() {
-    var btnAddUserSubmit =   document.getElementById('btnAddUserSubmit')
     
 
     const options = {

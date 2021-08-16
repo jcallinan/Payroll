@@ -11,7 +11,6 @@ divSentMessage.style.visibility ="hidden";
  
 
 function addEmployee() {
-    var btnAddEmployeeSubmit =   document.getElementById('btnAddEmployeeSubmit')
     
 //Should find upper level user credentials
     const EmployeeInformation = {
