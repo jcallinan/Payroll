@@ -48,7 +48,7 @@ app.post('/addEmployee', function(req, res) {
 app.post('/SubTime', function(req, res) {
   mydata = req.body;
 
-      var sql = "INSERT INTO hours (emp_id, date, start_time, end_time, paytype_id) VALUES ('" + mydata.Employee_Id + "', '" + mydata.Date + "', '" + mydata.Weekday + "', '" + mydata.Start_Time + "', '" + mydata.End_Time + "', '" + mydata.Break + "', '" + mydata.Pay_type + "')";
+      var sql = "INSERT INTO hours (emp_id, work_date, start_time, end_time, break, paytype_id) VALUES ('" + mydata.Employee_Id + "', '" + mydata.work_date + "', '" + mydata.start_time + "', '" + mydata.end_time + "', '" + mydata.break + "', '" + mydata.paytype_id + "')";
       con.query(sql, function (err, result) {
         if (err) throw err;
         console.log("1 record inserted");
